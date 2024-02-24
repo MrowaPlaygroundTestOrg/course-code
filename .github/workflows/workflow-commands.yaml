@@ -1,4 +1,4 @@
-# https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners#supported-runners-and-hardware-resources
+# https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions
 name: Workflow commands
 on: push
 jobs:
