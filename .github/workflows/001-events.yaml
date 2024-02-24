@@ -1,6 +1,13 @@
 # 
 name: Repository events
-on: [push, pull_request, issues]
+on: 
+  push:
+    branches:
+      - main
+      - "feature/*"
+      - "!feature/featA" # not going to run if the exclamation mark is there
+  pull_request:
+      types: [opened]
 jobs:
   checkout-tests:
     runs-on: ubuntu-latest

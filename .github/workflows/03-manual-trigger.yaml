@@ -1,0 +1,12 @@
+# 
+name: 03-Manual-Trigger
+on: 
+  workflow_dispatch:
+jobs:
+  log-info:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo github
+        run: echo $GITHUB_REF
+      
+      
